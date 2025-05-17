@@ -155,11 +155,10 @@ item-capitulo-resumo{
     }
 
     .barra-lateral {
-        position: relative;
-        width: 100%;
-        padding: 10px;
-        border: none;
-        background: rgba(0, 0, 0, 0.5);
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      left: -9999px;
     }
 
     /* Layout de perfis na grid */
