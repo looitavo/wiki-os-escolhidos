@@ -154,13 +154,6 @@ item-capitulo-resumo{
         min-width: 100%;
     }
 
-    .barra-lateral {
-      visibility: hidden;
-      opacity: 0;
-      position: absolute;
-      left: -9999px;
-    }
-
     /* Layout de perfis na grid */
     .caixa {
         grid-template-columns: repeat(2, 1fr);
