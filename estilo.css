@@ -1,0 +1,232 @@
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primaria: #4f46e5;
+    --secundaria: #530ad1c4;
+    --escuro: #0f172a;
+    --maisEscuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: rgba(255, 255, 255, 0.1);
+  }
+
+  a {
+    color: var(--claro);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--primaria);
+    
+}
+
+body{
+    background-image: linear-gradient(to bottom, #0a0f1c,  #17023ae7 );
+    color: var(--claro);
+    margin: 0;
+    padding: 0 ;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    padding-left:230px;
+    max-height: 100px ;
+}
+
+.Titulo-Principal{
+    top: 0;
+    padding-left: 600px;
+    max-height: 100px ;
+    font-size: large; 
+}   
+
+
+
+.titulo-principal{
+    text-align: center;
+    padding-left: 500px;
+    top: auto;
+}
+
+.conteudo-principal{
+    display: flex;
+}
+
+.conteudo-central{
+    padding-left: 240px;
+    background: #0b101d31;
+    
+}
+
+.barra-lateral{
+    flex: 1;
+    padding: 20px;
+    position: fixed;
+    background: rgba(5, 5, 5, 0.39);
+    border: 1px solid #fffc37;
+    z-index: 100;
+    top: 0;
+}
+
+
+item-capitulo-resumo{
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--claro);
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+.item-capitulo-conteudo{
+    padding: 10px;
+}
+
+
+.personagens-section{
+    padding: 6rem 2rem;
+}
+
+
+
+.caixa{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 colunas fixas */
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 30px;
+    padding: 20px;
+    justify-items: center; 
+}
+
+
+
+.perfil{  
+    background-color: var(--escuro) ;
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 5px solid var(--vidro);
+    transition: all 0.3s ease;
+  }
+
+
+  .perfil:hover{
+    box-shadow: 0 10px 20px  hsla(262, 94%, 27%, 0.61);
+    transform: translateY(-10px) scale(1.03);
+  }
+
+
+.persornagen-imagen{ 
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.Titulo-nome{
+    text-align: center
+
+}
+
+.Especificações{
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+   
+    
+    .Titulo-Principal{
+        text-align: center;
+        font-size: 1.9em;
+    }
+
+    .logo{
+        visibility: hidden;
+    }
+    
+    
+    .conteudo-principal {
+        flex-direction: column;
+    }
+
+    .conteudo-central {
+        padding: 10px;
+        min-width: 100%;
+    }
+
+  
+    .barra-lateral{
+        visibility: hidden;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .caixa {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .persornagen-imagen {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .logo {
+        padding-left: 20px;
+        max-height: 80px;
+    }
+
+    .Titulo-Principal, .titulo-principal {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .fact-sheet {
+        float: none;
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+}
