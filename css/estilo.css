@@ -144,7 +144,18 @@ item-capitulo-resumo{
 
 
 @media (max-width: 768px) {
-    /* Ajusta o layout principal */
+   
+    
+    .Titulo-Principal{
+        text-align: center;
+        font-size: 1.9em;
+    }
+
+    .logo{
+        visibility: hidden;
+    }
+    
+    
     .conteudo-principal {
         flex-direction: column;
     }
@@ -154,7 +165,16 @@ item-capitulo-resumo{
         min-width: 100%;
     }
 
-    /* Layout de perfis na grid */
+  
+    .barra-lateral{
+        visibility: hidden;
+    }
+
+
+
+
+
+
     .caixa {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
