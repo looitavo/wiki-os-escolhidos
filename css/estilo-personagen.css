@@ -146,3 +146,27 @@ table.Tabela-arma {
     border-radius: 5px;
 object-fit: cover;
 }
+
+
+
+
+@media (max-width: 768px) {
+
+   .conteudo-principal {
+        flex-direction: column;
+    }
+
+    .conteudo-central {
+        padding: 10px;
+        min-width: 100%;
+    }
+
+  
+    .barra-lateral{
+        visibility: hidden;
+    }
+
+
+
+
+}
